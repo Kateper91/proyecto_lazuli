@@ -1,0 +1,46 @@
+{{>header}}
+
+<div class="container_shop">
+  <div class="row_cards">
+    <div class="col-8">
+        <ul class="imagenes">
+            <li>
+                <a href="" class="thumbnails_producto">
+                    <img src="resources/imagenes/lexington_rose.jpg" alt="">
+                </a>
+            </li>
+            <li class="image-additional"> 
+                <a href="" class="thumbnails">
+                    <img src="resources/imagenes/lexington_plomo.jpg" class="img-thumbnail" alt="">
+                </a>
+            </li>
+            <li class="image-additional">
+                <a href="" class="thumbnails">
+                    <img src="resources/imagenes/lexington_plomo.jpg" class="img-thumbnail" alt="">
+                </a>
+            </li>
+        </ul>    
+    </div>
+    <div class="col-4" id="shop">
+        <h2 class="product-title" itemprop="name">Lexington</h2>
+        <h3>$450</h3>
+        <h4><i class="fa-solid fa-credit-card-front"></i>Hasta 12 cuotas sin interes</h4> 
+        <div>
+            <form action="/comprar/" method="post" id="product_form" class="display-when-content-ready">
+                <input type="hidden" name="add_to_cart">
+                <div class="product-variants">
+                    <div class="variant-container one-variant m-none">
+                        <label for="variation_1" class="select-label">Color:</label>
+                            <p>Oro</p>
+                            <p>Rose Gold</p>
+                            <p>Plomo</p>
+                    </div>
+                </div>
+                    <input type="submit" class="js-addtocart jss-prod-submit-form btn btn-primary btn-bloc m-top m-bottom d-inline-bloc cart" value="Agregar al carrito"> 
+            </form>
+        </div>
+    </div>
+  </div>
+</div>
+
+{{>footer}}

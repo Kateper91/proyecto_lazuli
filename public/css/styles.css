@@ -1,0 +1,500 @@
+/*Mobile first*/
+*{
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  color: #444;
+}
+h1{
+  font-size: 2.75em;
+}
+h2{
+  font-size: 2.06em;
+}
+h3{
+  font-size: 1.68em;
+}
+h4{
+  font-size: 1.31em;
+}
+h5{
+  font-size: 1.06em;
+}
+a{
+  color: rgb(23, 20, 18);
+  text-decoration: none;
+  font-size: 17px;
+}
+a:hover{
+  text-decoration: none;
+}
+
+body{
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+}
+#top  {
+  border-bottom: 1px solid rgb(194, 163, 136);
+  background-color: #E6BEAE;
+  background-image: linear-gradient(to bottom, #f3cbbb, #E6BEAE);
+  background-repeat: repeat-x;
+  border-color: #836e5d #cfae92 #b2947a;
+  margin: 0 0 20px 0;
+  min-height: 40px;
+  padding: 4px 0 3px 0;
+}
+#top a{
+  font-size: 16 px;
+  color: #000;
+  text-decoration: none;
+}
+#top >li {
+  float:left; 
+}
+#top li ul{
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  background-color: #E6BEAE;
+}
+#top li:hover > ul{
+  display:block;
+  color: #000;
+} 
+
+.container {
+  text-align: center;
+}
+.img-responsive{
+  width: 50%;
+  max-width: 80%;
+  height: 50%;
+  max-height: 100%;
+  margin-bottom: 8px;
+}
+
+
+/*------------Footer-------*/
+.footer {
+  width: 100%;
+  margin-top: 10px;
+  padding: 30px;
+  background-color: #221e1e;
+  border-top: 1px solid #ddd;
+  color: #EEE4E1;
+  float: left;
+}
+footer h5{
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
+footer a {
+  color: #ccc;
+}
+/*--------Card--------*/
+.col-4{
+  width: 33%;
+  max-width: 100%;
+  padding: 3px; 
+  float: left;
+}
+.card{
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.card-title, .card-text {
+  padding: 5px;
+}
+.card-title{
+  font-weight:bold;
+}
+.card-text{
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp: 2;
+  line-clamp:2;
+  overflow:hidden;
+}
+.card-text:active{
+  display:block;
+}
+
+.card-body {
+  background-color: #E6BEAE;
+  text-align: left;
+  max-width: 100px;
+  padding: 5px;
+} 
+
+
+/*-----Productos--------*/
+.row_cards{
+  width: 100%;
+  text-align: center;
+}
+.producto{
+  width: 50%;
+  float: left;
+  width: 18em;
+  padding: 8px 0 8px 30px;
+}
+
+.card-body-pr {
+  background-color: #E6BEAE;
+  text-align: left;
+  max-width: 100%;
+  font-size: 1.05em;
+}
+/*--------------Lexington*/
+.col-8{
+  width: 75%;
+  margin-left:-10px
+}
+.imagenes{
+  list-style: none;
+  float: left;
+}
+.thumbnails_producto img{
+  width: 16em;
+}
+.image-additional{
+  width: 10em;
+  max-width: 50%;
+  padding: 3px; 
+  float: left;
+}
+#shop{
+ max-width: 100%;
+ margin-left: 5em;
+ align-content: center;
+
+}
+
+
+/*---Registro------*/
+.register-form{
+  width: 90%;
+  margin: auto;
+}
+.col_form_reg{
+  width: 85%;
+  float:left;
+}
+.register-form{
+   width: 90%;
+   margin: 5px auto;
+   padding: 0px 20px 60px 20px;
+   margin-top: 35px;
+   font-family: sans-serif;  
+   text-align: left;
+   background-color: #f4dad0;
+   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
+}
+
+.register-form h1 {
+   text-align: center;
+   color:#444 ;
+   font-size: 33px;
+   padding: 70px 0 10px 0;
+}
+.register-form input[type="password"],
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form textarea {
+   width: 100%;
+   padding: 15px;
+   border: 1px solid #ced4da;
+   margin-bottom: 10px;
+   box-sizing:border-box;
+}
+
+.btn-cancel{
+  width: 80%;
+  max-width: 95%;
+  padding: 15px;
+  margin: 20px 0 0 5px;
+  background-color: #9CA3AF;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size:medium;
+  color: #ffffff;
+  text-align: center;
+ 
+  /* Para dar la apariencia de un boton */
+ -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;  
+}
+.btn-cancel:hover,.btn-cancel:active{
+  color:#fff;
+  background-color: #6B7280;
+  border-color:#6B7280
+;
+}
+.btn-cancel:focus{
+  box-shadow:0 0 0 3px #6B7280;
+} 
+
+/* Estilos boton GUARDAR*/
+.btn-save{
+  width: 80%;
+  max-width: 95%;
+  padding: 15px;
+  margin: 20px 0 0 5px;
+  background-color: #a4886f;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size:medium;
+  color: #ffffff;
+  /* Para dar la apariencia de un boton */
+ -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;  
+}
+.btn-save:hover,.btn-save:active{
+  color:#fff;
+  background-color: #1E3A8A;
+  border-color:#1E3A8A;
+}
+.btn-save:focus{
+  box-shadow:0 0 0 3px #1E3A8A;
+}
+
+
+.btn-send:hover,.btn-send :active{
+color:#fff;
+background-color: #6B7280;
+border-color:#6B7280
+;
+}
+.btn-send:focus{
+box-shadow:0 0 0 3px #6B7280;
+} 
+
+/*------------Login------*/
+.row{
+  width: 100%;
+  margin: 5px;
+}
+.col_form{
+  width: 90%;
+  margin-top: 1em;
+}
+#login-box{
+  padding: 1em;
+  margin-left: 1em;
+}
+#login-box, #new-user {
+  font-family: sans-serif;  
+  text-align: left;
+  background-color: #E6BEAE;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
+}
+#login-box h2, #new-user h2{
+  margin: 0 0 30px;
+  padding: 0;
+  color: #020201;
+  text-align: center;
+}
+
+#login-box .renglon, #new-user {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom:  1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #000000;
+  font-size: 12px;
+}
+#new-user {
+  padding: 15px;
+  background-color: #E6BEAE;
+}
+
+
+/* Estilos boton LOGIN*/
+.btn-login{
+    width: 100%;
+    padding: 15px;
+    margin: 0 0 15px;
+    background-color: #a4886f;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+  }
+  .btn-login:hover,.btn-login:active{
+    color:#fff;
+    background-color:#e5b5a2;
+    border-color:#e5b5a2;
+  }
+  .btn-login:focus{
+    box-shadow:0 0 0 3px #e5b5a2
+  }
+/*-----Nosotros------*/
+.nosotros {
+  padding: 2em;
+}
+
+
+/*--------------Tablet-------------*/
+@media (min-width:768px) {
+  .img-responsive{
+    width: 40%;
+  }
+/*---------------------carrousel-------------------------*/
+ .carousel{
+  background-color: #fcfcfc;
+  align-content: center;
+  margin: auto;
+  width: 75%;
+}
+/*----------cards--------------------*/
+.card-body{
+  max-width: 100%;
+}
+
+
+/*-----------producto-----------*/
+.producto{
+  width: 33%;
+  padding: 5px 0 8px 15px;
+}
+
+/*-----------lexington---------*/
+.thumbnails_producto img {
+  width: 20em;
+}
+.image-additional{
+  width: 8em;
+}
+/*--------------login----------*/
+.btn-save {
+  width: 80%;
+}
+.row{
+  width: 80%;
+  margin: auto;
+}
+}
+
+/*-----------Ordenador------------*/
+@media (min-width:1024px){
+  .img-responsive{
+    width: 30%;
+  }
+  /*--------Card----*/
+  .card-body-pr{
+    height: 100px;
+  }
+
+}
+
+/*--------------init--------------------*/
+/* .container_init{
+  background-image: url(imagenes/lazuli_logo.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  color: white;
+  margin: 100px 450px;
+  width: 650px;
+  height: 300px;
+  position: absolute;
+  animation-name: animar;
+  animation-duration: 11s;
+  animation-iteration-count: initial;
+}
+@keyframes animar{
+  0% {opacity: 0;}
+  10% {opacity: 0.2;}
+  30% {opacity: 0.5;}
+  60%{opacity: 0.8;}
+  100% {opacity: 1;}
+}
+
+.btn-login-init{
+  width: 15%;
+  padding: 15px;
+  margin: 435px 10px 50px 530px;
+  background-color: #f6cdcd;
+  border-color: #f6cdcd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color:#000;
+  text-align: center;
+  /* Para dar la apariencia de un boton */
+/*  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none; 
+  position: relative; 
+  animation-name: boton;
+  animation-duration: 6s;
+  animation-iteration-count: initial;
+  box-shadow: 0px 10px 10px -6px #545252;
+}
+.btn-login-init:hover,.btn-login-init:active{
+  color:#fff;
+  background-color:#cea392;
+  border-color:#cea392;
+}
+.btn-register-init{
+  width: 15%;
+  padding: 15px;
+  background-color: #f6cdcd;
+  border-color: #f6cdcd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #0c0c0c;
+  margin-top: 35px;
+  text-align: center; */
+  /* Para dar la apariencia de un boton */
+ /*  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none; 
+  position: relative; 
+  animation-name: boton;
+  animation-duration: 6s;
+  animation-iteration-count: initial;
+  box-shadow: 0px 10px 10px -6px #545252;
+}
+.btn-register-init:hover,.btn-register-init:active{
+  color:#fff;
+  background: #cea392;
+  border-color:#cea392;
+}
+
+@keyframes boton {
+  from {top: 400px;}
+  to {top: 0px;}
+} */

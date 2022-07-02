@@ -1,0 +1,27 @@
+{{>header}}
+
+
+        <div class="container_form col" >
+            <div class="row">
+                <div class="col_form" id="login-box">
+                    <h2>Ya es cliente</h2>
+                    <p><strong>Yo soy cliente</strong></p>
+                    <form action="/auth" method="POST" >
+                        <div class="form-group">
+                            <label class="control-label">
+                            <i class="fa fa-user" aria-hidden="true"></i> Usuario</label>
+                            <input type="text" name="user" class="renglon"id="user" required />
+                        </div>
+                        <div class="form-group" >
+                            <label class="control-label">
+                            <i class="fa fa-unlock" aria-hidden="true"></i> Contraseña
+                            </label>
+                            <input type="password" name="pass" class="renglon" id="pass" required />
+                            <a href="">Olvido su contraseña</a>
+                        </div>
+                        <input type="submit" class="btn-login" value="Login" />
+                    </form>
+                </div>    
+            </div>
+        </div>
+{{>footer}}
