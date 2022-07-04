@@ -52,7 +52,7 @@ app.post ('/register', async (req,res)=>{
     let passwordHaash = await bcrypt.hash(pass, 8);
     connection.query('INSERT INTO users SET ?', {user:user, name:name, mail:mail, pass:passwordHaash, phone:phone, address:address, city:city, country:country}, async(error, results)=> {
         if (error){
-            alert("El valor ingresado no es valido");
+             console.log(error);
         }else{
             res.send ("Registro realizado correctamente");
         }
@@ -67,7 +67,7 @@ app.post('/auth', async(req, res) =>{
     if(user && pass) {
         connection.query ('SELECT * FROM users WHERE user = ? ' , [user], async (error, results, fields)=>{
             if(results.length == 0 || !(await bcrypt.compare(pass, results[0].pass))){
-                res.render ('view', {errormessage: "No se pudo iniciar sesion"});
+                res.send ("el usuario y / o contraseña  ingresados no son validos")
             }else{
                 res.send('Login correcto');
             }
@@ -91,12 +91,23 @@ app.get('/', (req, res)=>{
     }
 })
 
-//logout
-app.get('/logout', (req,res)=>{
-    req.session.destroy(()=>{
-        res.redirect('/')
-    })
+//cambio de contraseña
+app.post ('/update', async (req,res)=>{
+        const user = req.body.user;
+        const pass = req.body.Pass;
+        let passwordHaash = await bcrypt.hash(pass, 8);
+        if(user && pass) {
+            connection.query ('UPDATE users SET pass WHERE user = ? ', {user:user, pass:passwordHaash}, async (error, results)=>{
+                if(error){
+                    console.log(error)
+                }else{
+                    res.send('Contraseña actualizada');
+                }
+            })
+        };
 })
+
+
 
 
 app.listen(port, ()=>{
